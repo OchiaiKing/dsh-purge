@@ -1,28 +1,14 @@
-# 1.1.73
-
-## 中文
-
-- 修复 `1.1.72`：运行时不再把已移除的 `Your working directory is {{cwd}}.` 重新写入 `deployment:persona-suffix`。这曾使 `0.2.1-rc.2` 在真正发送消息时失败。
-- Git 地址安装后的实际包与提示词组装均在隔离官方 `dsh-v0.2.1-rc.2` 运行时验证。
-
-## English
-
-- Fix `1.1.72`: the runtime no longer reintroduces the removed `Your working directory is {{cwd}}.` value into `deployment:persona-suffix`, which caused `0.2.1-rc.2` to fail when sending a message.
-- Verified the exact Git installation path and prompt assembly in an isolated official `dsh-v0.2.1-rc.2` runtime.
-
 # 1.1.72
 
 ## 中文
 
-- Fork 兼容版：基于 [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge)，保留原项目 MIT 许可证与署名。
-- 适配官方 DeepSeek Harness **0.2.1-rc.2**：移除已废弃的系统提示词变量 `{{cwd}}`，避免启动时报 `unknown prompt variable: cwd`。
-- 在隔离的官方 `dsh-v0.2.1-rc.2` 源码运行时执行完整应用和重启验证；不触碰现有安装或聊天记录。
+- 修复运行时遗漏：不再把已移除的 `Your working directory is {{cwd}}.` 重新写入 `deployment:persona-suffix`。这曾使 `0.2.1-rc.2` 在真正发送消息时失败。
+- Git 地址安装后的实际包与提示词组装均在隔离官方 `dsh-v0.2.1-rc.2` 运行时验证。
 
 ## English
 
-- Compatibility fork based on [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge), retaining the original MIT license and attribution.
-- Support official DeepSeek Harness **0.2.1-rc.2** by removing the retired `{{cwd}}` system-prompt variable, which otherwise prevents startup with `unknown prompt variable: cwd`.
-- Full Apply and restart were validated against an isolated official `dsh-v0.2.1-rc.2` source runtime; existing installations and chat data were untouched.
+- Fix a runtime oversight: the plugin no longer reintroduces the removed `Your working directory is {{cwd}}.` value into `deployment:persona-suffix`, which caused `0.2.1-rc.2` to fail when sending a message.
+- Verified the exact Git installation path and prompt assembly in an isolated official `dsh-v0.2.1-rc.2` runtime.
 
 # 1.1.71
 
