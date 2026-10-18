@@ -28,7 +28,9 @@
   config:
     includeHarnessIdentity: false
     personaPrefix: ""
-    personaSuffix: Your working directory is {{cwd}}.
+    # DSH 0.2.1 exposes the working directory through runtime context rather
+    # than the removed {{cwd}} system-prompt variable.
+    personaSuffix: ""
 
 - id: dsh-purge
   inject: [systemPrompt, tools]

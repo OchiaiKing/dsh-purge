@@ -1,3 +1,17 @@
+# 1.1.72
+
+## 中文
+
+- Fork 兼容版：基于 [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge)，保留原项目 MIT 许可证与署名。
+- 适配官方 DeepSeek Harness **0.2.1-rc.2**：移除已废弃的系统提示词变量 `{{cwd}}`，避免启动时报 `unknown prompt variable: cwd`。
+- 在隔离的官方 `dsh-v0.2.1-rc.2` 源码运行时执行完整应用和重启验证；不触碰现有安装或聊天记录。
+
+## English
+
+- Compatibility fork based on [YuJunZhiXue/dsh-purge](https://github.com/YuJunZhiXue/dsh-purge), retaining the original MIT license and attribution.
+- Support official DeepSeek Harness **0.2.1-rc.2** by removing the retired `{{cwd}}` system-prompt variable, which otherwise prevents startup with `unknown prompt variable: cwd`.
+- Full Apply and restart were validated against an isolated official `dsh-v0.2.1-rc.2` source runtime; existing installations and chat data were untouched.
+
 # 1.1.71
 
 ## 中文
