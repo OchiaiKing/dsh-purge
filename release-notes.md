@@ -1,3 +1,15 @@
+# 1.1.73
+
+## 中文
+
+- 修复 `1.1.72`：运行时不再把已移除的 `Your working directory is {{cwd}}.` 重新写入 `deployment:persona-suffix`。这曾使 `0.2.1-rc.2` 在真正发送消息时失败。
+- Git 地址安装后的实际包与提示词组装均在隔离官方 `dsh-v0.2.1-rc.2` 运行时验证。
+
+## English
+
+- Fix `1.1.72`: the runtime no longer reintroduces the removed `Your working directory is {{cwd}}.` value into `deployment:persona-suffix`, which caused `0.2.1-rc.2` to fail when sending a message.
+- Verified the exact Git installation path and prompt assembly in an isolated official `dsh-v0.2.1-rc.2` runtime.
+
 # 1.1.72
 
 ## 中文
